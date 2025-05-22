@@ -1,0 +1,66 @@
+@media all and (orientation:landscape)
+{}
+
+.navbar {
+    margin: 0;  /* Tar bort standard marginal från navbaren */
+    padding: 0; /* Tar bort standard padding från navbaren */
+}
+
+.navbarSlut {
+    border: none; 
+    margin: 0; 
+    background-color:rgb(3, 121, 54);
+    height: 2px; 
+}
+
+hr {
+    border: none;        
+    height: 2px;        
+    background-color: rgb(3, 121, 54);
+    margin: 0;           
+}
+
+h2{
+    text-align: center;
+    color: rgb(86, 86, 86);  
+}
+
+
+.Prissättning{
+    color:black;
+    text-align: center;
+    border: 2px solid rgb(86, 86, 86);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.Kontaktinfo{
+    color: rgb(3, 121, 54);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.notification{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(86, 86, 86) ;
+    color: white;
+    padding: 10px ;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.bild{
+    position: absolute;  
+    bottom: 0;          
+    right: 0;       
+
+}

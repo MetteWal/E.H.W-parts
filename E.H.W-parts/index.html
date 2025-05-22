@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="EHW parts">
+        <meta charset="Author" content="Mette">
+        <title>Hemsida bootstrap</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      
+
+       <!--Navbar-->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">E.H.W</a>  <!--knapp till startsidan via loggan-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Start</a> <!--knapp till startsidan-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="beställ.html">Beställ</a> <!--knapp till beställ sidan-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pris.html">Pris</a> <!--knapp till pris sidan-->
+              </li>
+              <ul class="navbar-nav"> <!-- Separat lista för att placera Instagram-ikonen till höger -->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/e.h.w_parts?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="instagramlogga.webp" alt="Instagram" style="width: 30px; height: auto;">
+                    </a>
+                  </li>
+                  </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+ 
+       <div class="navbarSlut">
+        <hr> <!--för att kunna ändra utseendet/göra en linje-->
+       </div>
+       <!--Navbar slut--> 
+
+
+       <!--Huvudbild--> <img src="EHW-final.png" class="img-fluid" alt="EHW">
+
+
+      <!--Sökruta-->
+      <h3>Tidigare delar</h3> 
+      <div class="Sök">
+      <form class="d-flex" role="search"><!--ARIA, Accessible Rich Internet Applications, skärmläsare -->
+        <input class="form-control me-2" type="Sök" placeholder="Sök vara" aria-label="Search" style="width: 50%" id="searchInput">
+        <button class="btn btn-outline-success" type="submit" id="searchButton" >Sök</button>
+      </form>
+    </div>
+    <!--Sökruta slut-->
+
+ <!--Tidigare delar-->
+ <div class="cardContainer d-flex flex-wrap justify-content-center" style="padding: 2rem;"> <!--Gör att kort hoppar ner till en ny rad när skärmen blir mindre-->
+  <div class="row">
+
+      <!--Del 1 början-->
+      <div class="col-md-3">
+          <div class="card" data-name="Avgasrör">
+            <div id="carousel-1" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del1.jpg" class="d-block w-100" alt="avasrör">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del1.2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del1.3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Avgasrör</h5>
+                    <p class="infoText" data-full="Ett avgasrör är ett rör som för ut avgaserna från motorn så att de inte hamnar i bilen">Ett avgasrör är ett rör som för ut avgaserna från motorn </p>
+                    <button class="read-more btn btn-link">Läs mer</button>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 1 slut-->
+      <!--Del 2 början-->   
+      <div class="col-md-3">
+        <div class="card" data-name="Intake">
+          <div id="carousel-2" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Del2.jpg" class="d-block w-100" alt="Del2">
+                </div>
+                <div class="carousel-item">
+                  <img src="Del2.2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Del2.3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+
+              <!--knappar för att byta bild-->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <!--Textdelen för kort-->
+              <div class="card-body">
+                  <h5 class="card-title">Intake Plenum</h5>
+                  <p class="infoText">Custom intake plenum, 4x45mm throttle bodies for a B230 16v</p>
+                  <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+              </div>
+              <!--Textdelen för kort slut-->
+            </div>
+        </div>
+    </div>
+    <!--Del 2 slut-->    
+    <!--Del 3 början-->    
+     <div class="col-md-3">
+          <div class="card" data-name="Diffmount">
+            <div id="carousel-3" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del3.jpg" class="d-block w-100" alt="Del3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Diff-Mount</h5>
+                    <p class="infoText">Rear diff-mount for Audi s4 b5</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 3 slut-->     
+      <!--Del 4 början-->  
+       <div class="col-md-3">
+          <div class="card" data-name="Cylinder-adapter">
+            <div id="carousel-4" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del4.jpg" class="d-block w-100" alt="Del4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Cylinder adapter</h5>
+                    <p class="infoText">Brake master cylinder adapter, Volvo 240</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 4 slut-->  
+      <!--Del 5 början-->   
+         <div class="col-md-3">
+          <div class="card" data-name="Del5">
+            <div id="carousel-5" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del5.jpg" class="d-block w-100" alt="Del5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del5.2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-5" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-5" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Del 5</h5>
+                    <p class="infoText">Info om delen</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 5 slut--> 
+      <!-- Del 6 början-->
+      <div class="col-md-3">
+          <div class="card" data-name="Del 6">
+            <div id="carousel-6" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del6.jpg" class="d-block w-100" alt="Del 6">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del6.2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del6.3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-6" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-6" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Del</h5>
+                    <p class="infoText">Info om delen</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 6 slut-->    
+      <!--Del 7 början-->
+      <div class="col-md-3">
+          <div class="card" data-name="Avgasrör">
+            <div id="carousel-7" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del7.jpg" class="d-block w-100" alt="avasrör">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del7.2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Del7.3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-7" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-7" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Del 7</h5>
+                    <p class="infoText">Info om delen</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 7 slut-->  
+      <!--Del 8 början-->
+      <div class="col-md-3">
+          <div class="card" data-name="Spacers">
+            <div id="carousel-8" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Del8.jpg" class="d-block w-100" alt="Offset-Spacers">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+
+                <!--knappar för att byta bild-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-8" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-8" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                <!--Textdelen för kort-->
+                <div class="card-body">
+                    <h5 class="card-title">Spacers</h5>
+                    <p class="infoText">50mm Tierod offset-spacers</p>
+                    <a href="beställ.html" class="btn btn-outline-success">Beställ</a>
+                </div>
+                <!--Textdelen för kort slut-->
+              </div>
+          </div>
+      </div>
+      <!--Del 8 slut-->
+  <script src="script.js"></script>
+    </body>
+</html>
